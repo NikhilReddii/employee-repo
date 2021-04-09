@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <property name="HOME_LOG" value="F:\\Corporate Training\\KLS\\Spring 5\\Spring Data\\spring-data-jpa-app\\log\\app.log"/>
+    <property name="HOME_LOG" value="D:\\spring-data-jpa-app\\log\\emp-log.log"/>
 
     <appender name="FILE-ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${HOME_LOG}</file>
 
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>./log/archived/app.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>./log/archived/app-log.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
             <!-- each archived file, size max 10MB -->
             <maxFileSize>10MB</maxFileSize>
             <!-- total size of all archive files, if total size > 20GB, 
